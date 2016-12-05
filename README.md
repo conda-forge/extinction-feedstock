@@ -13,6 +13,18 @@ Cython-optimized implementations of empirical dust exitinction laws
 found in astronomy literature.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/extinction-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/extinction-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/extinction-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/extinction-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/extinction-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/extinction-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/version.svg)](https://anaconda.org/conda-forge/extinction)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/downloads.svg)](https://anaconda.org/conda-forge/extinction)
+
 Installing extinction
 =====================
 
@@ -68,18 +80,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/extinction-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/extinction-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/extinction-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/extinction-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/extinction-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/extinction-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/version.svg)](https://anaconda.org/conda-forge/extinction)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/downloads.svg)](https://anaconda.org/conda-forge/extinction)
 
 
 Updating extinction-feedstock
