@@ -16,14 +16,16 @@ found in astronomy literature.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/extinction-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/extinction-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/extinction-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/extinction-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/extinction-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/extinction-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/extinction-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/extinction-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/extinction-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/extinction-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/extinction-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/extinction-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/version.svg)](https://anaconda.org/conda-forge/extinction)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/extinction/badges/downloads.svg)](https://anaconda.org/conda-forge/extinction)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-extinction-green.svg)](https://anaconda.org/conda-forge/extinction) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/extinction.svg)](https://anaconda.org/conda-forge/extinction) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/extinction.svg)](https://anaconda.org/conda-forge/extinction) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/extinction.svg)](https://anaconda.org/conda-forge/extinction) |
 
 Installing extinction
 =====================
@@ -68,6 +70,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
