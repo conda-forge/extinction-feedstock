@@ -1,6 +1,6 @@
 {% set name = "extinction" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "0ae3adb554771a7641b5d4a87183abeb1fb22189377e5ec691687dc0a627a966" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "5fa86b8a6753cb308aa22620fa8410a93a041f7e0eef2d45ef3179a733adb46f" %}
 
 package:
   name: {{ name|lower }}
