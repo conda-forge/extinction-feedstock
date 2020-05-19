@@ -1,6 +1,6 @@
 {% set name = "extinction" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "0ae3adb554771a7641b5d4a87183abeb1fb22189377e5ec691687dc0a627a966" %}
+{% set version = "0.4.5" %}
+{% set sha256 = "e6a90cf8c66cdb0cb747fb1114da4b959b95aa073db4919ad530aa844b8beb42" %}
 
 package:
   name: {{ name|lower }}
@@ -12,16 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  skip: true  # [py27]
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
-    - setuptools
     - numpy
+    - pip
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -34,7 +36,7 @@ about:
   home: http://github.com/kbarbary/extinction
   license: MIT
   license_file: LICENSE
-  summary: 'Fast interstellar dust extinction laws'
+  summary: Fast interstellar dust extinction laws
   description: |
     Cython-optimized implementations of empirical dust exitinction laws
     found in astronomy literature.
