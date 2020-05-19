@@ -19,11 +19,11 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - Cython
   host:
     - python
-    - setuptools
     - numpy
+    - pip
+    - cython
   run:
     - python
     - {{ pin_compatible('numpy') }}
