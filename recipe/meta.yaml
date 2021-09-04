@@ -1,6 +1,6 @@
 {% set name = "extinction" %}
-{% set version = "0.4.5" %}
-{% set sha256 = "e6a90cf8c66cdb0cb747fb1114da4b959b95aa073db4919ad530aa844b8beb42" %}
+{% set version = "0.4.6" %}
+{% set sha256 = "d16dec13a0404e04c3631f38628eb3b233ac07deac2950129dd136da8f7e4438" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py27]
 
 requirements:
