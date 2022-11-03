@@ -1,20 +1,17 @@
 {% set name = "extinction" %}
 {% set version = "0.4.6" %}
-{% set sha256 = "d16dec13a0404e04c3631f38628eb3b233ac07deac2950129dd136da8f7e4438" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: d16dec13a0404e04c3631f38628eb3b233ac07deac2950129dd136da8f7e4438
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py27]
 
 requirements:
   build:
