@@ -1,5 +1,5 @@
 {% set name = "extinction" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -46,5 +46,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - benjaminrose
     - kbarbary
     - guillochon
