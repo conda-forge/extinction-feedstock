@@ -1,5 +1,5 @@
 {% set name = "extinction" %}
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d16dec13a0404e04c3631f38628eb3b233ac07deac2950129dd136da8f7e4438
+  sha256: 8b2bd7cfd7b027de2bd18ed813235441ccbdd832f987928282714327c8d3aebb
 
 build:
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
