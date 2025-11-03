@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d16dec13a0404e04c3631f38628eb3b233ac07deac2950129dd136da8f7e4438
+  sha256: 5ced42f690c1590dfb174996c4eacd103b76c4c23a285c43e4a5206937c1fa99
 
 build:
-  number: 5
+  number: 6
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pip
     - cython
+    - setuptools
   run:
     - python
 
